@@ -30,8 +30,8 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" type="text/css" media="all" />
 <![endif]-->
-<?php 
-	wp_head(); 
+<?php
+	wp_head();
 	$themename = wp_get_theme();
 	$themename = preg_replace("/\W/", "_", strtolower($themename) );
 	if( !get_option( 'optionsframework_skt_white_pro' ) ) {
@@ -47,7 +47,7 @@
 <?php if ( is_home() || is_front_page() ) { ?>
     <div class="slider-main">
        <?php
-	   
+
 			$slAr = array();
 			$m = 0;
 			for ($i=1; $i<11; $i++) {
@@ -66,13 +66,13 @@
 						$m++;
 					}
 				}
-				
+
 			}
 			$slideno = array();
 			if( $slAr > 0 ){
 				$n = 0;?>
                 <div id="slider" class="nivoSlider">
-                <?php 
+                <?php
                 foreach( $slAr as $sv ){
                     $n++; ?><img src="<?php echo esc_url($sv['image_src']); ?>" alt="<?php echo esc_attr($sv['image_title']);?>" title="<?php if ( ($sv['image_title']!='') && ($sv['image_desc']!='')) { echo '#slidecaption'.$n ; } ?>"/><?php
                     $slideno[] = $n;
@@ -88,18 +88,15 @@
                         <?php if( of_get_option('slidedesc'.$sln, true) != '' ){ ?>
                             <p><?php echo of_get_option('slidedesc'.$sln, true); ?></p>
                         <?php } ?>
-						<?php if( of_get_option('slideurl'.$sln, true) != ''){ ?>
-                        	<a class="read" href="<?php echo of_get_option('slideurl'.$sln,true); ?>"><?php _e('Read More &raquo;','skt-white'); ?></a>
-                        <?php } ?>
 						<?php if( of_get_option('slidebutton'.$sln, true) != ''){ ?>
                         	<?php echo of_get_option('slidebutton'.$sln, true); ?>
                         <?php } ?>
                     </div>
-                    </div><?php 
+                    </div><?php
                 } ?>
-                
+
                 </div>
-                <div class="clear"></div><?php 
+                <div class="clear"></div><?php
 			}
             ?>
         </div>
@@ -127,28 +124,28 @@
                             </div><!-- nav --><div class="clear"></div>
                     </div><!-- header-inner -->
             </div><!-- header -->
- 
- <?php if ( !is_home() || !is_front_page() ) { ?>           
-      <div class="innerbanner">                 
+
+ <?php if ( !is_home() || !is_front_page() ) { ?>
+      <div class="innerbanner">
           <?php
 			$header_image = get_header_image();
-			if( is_single() || is_archive() || is_category() || is_author()|| is_search()) { 
+			if( is_single() || is_archive() || is_category() || is_author()|| is_search()) {
         		echo '<img src="'.esc_url( $header_image ).'" width="'.get_custom_header()->width.'" height="'.get_custom_header()->height.'" alt="" />';
 			}
 			elseif( has_post_thumbnail() ) {
 				$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
 				$thumbnailSrc = $src[0];
 				echo '<img src="'.$thumbnailSrc.'" alt="">';
-			} 
+			}
 			elseif ( ! empty( $header_image ) ) {
 				echo '<img src="'.esc_url( $header_image ).'" width="'.get_custom_header()->width.'" height="'.get_custom_header()->height.'" alt="" />';
-            }	
-			else { 
+            }
+			else {
             	echo '<img src="'.get_template_directory_uri().'/images/default-banner.jpg" alt="">';
 		    } ?>
-    </div> 
- <?php } ?>           
-            
+    </div>
+ <?php } ?>
+
       <div class="main-container">
          <?php if( function_exists('is_woocommerce') && is_woocommerce() ) { ?>
 		 	<div class="content-area">
