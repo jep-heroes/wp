@@ -31,8 +31,8 @@ class Simple_Job_Board_Notification {
      *
      * @since  1.0.0
      * @param  $post_id  Post ID
-     * 
-     * @return void 
+     *
+     * @return void
      */
     public static function admin_notification($post_id) {
         // Applied job title
@@ -41,7 +41,7 @@ class Simple_Job_Board_Notification {
         // Admin Email Address
         $to = get_option('admin_email');
         $subject = 'Applicant Resume Received[' . $job_title . ']';
-        $headers = array('Content-Type: text/html; charset=UTF-8');
+        $headers = array('Content-Type: text/html; charset=UTF-8', 'from: JEP Heroes <jobs@jep-heroes.com>');
         $message = self::job_notification_templates($post_id, 'Admin');
         $attachment = apply_filters( 'sjb_admin_notification_attachment' , '', $post_id );
         wp_mail($to, $subject, $message, $headers , $attachment);
@@ -52,8 +52,8 @@ class Simple_Job_Board_Notification {
      *
      * @since  1.0.0
      * @param  $post_id  Post ID
-     * 
-     * @return void 
+     *
+     * @return void
      */
     public static function hr_notification($post_id) {
         // Applied job title
@@ -61,7 +61,7 @@ class Simple_Job_Board_Notification {
         $to = get_option('settings_hr_email');
         $subject = 'Applicant Resume Received[' . $job_title . ']';
         $message = self::job_notification_templates($post_id, 'HR');
-        $headers = array('Content-Type: text/html; charset=UTF-8');
+        $headers = array('Content-Type: text/html; charset=UTF-8', 'from: JEP Heroes <jobs@jep-heroes.com>');
         $attachment = apply_filters( 'sjb_hr_notification_attachment' , '' , $post_id );
         if ('' != $to)
             wp_mail($to, $subject, $message, $headers , $attachment);
@@ -72,8 +72,8 @@ class Simple_Job_Board_Notification {
      *
      * @since  1.0.0
      * @param  $post_id  Post ID
-     * 
-     * @return void 
+     *
+     * @return void
      */
     public static function applicant_notification($post_id) {
         // Applied job title
@@ -90,9 +90,9 @@ class Simple_Job_Board_Notification {
                     }
                 }
         endif;
-        $subject = 'Your Resume Received for Job [' . $job_title . ']';
+        $subject = 'We received your resume for the position of [' . $job_title . ']';
         $message = self::job_notification_templates($post_id, 'applicant');
-        $headers = array('Content-Type: text/html; charset=UTF-8');
+        $headers = array('Content-Type: text/html; charset=UTF-8', 'from: JEP Heroes <jobs@jep-heroes.com>');
 
         if (isset($applicant_email) && is_email($applicant_email))
             wp_mail($applicant_email, $subject, $message, $headers);
@@ -104,14 +104,14 @@ class Simple_Job_Board_Notification {
      * @since  1.0.0
      * @param  $post_id  Post ID
      * @param  $notification_receiver  Notification Receiver ( Admin or HR or || Applicant)
-     *  
+     *
      * @return $message string  Email Template
      */
     public static function job_notification_templates($post_id, $notification_receiver) {
         // Applied job title
         $job_title = get_the_title($post_id);
 
-        // Site URL 
+        // Site URL
         $site_url = get_option('siteurl');
 
         $parent_id = wp_get_post_parent_id($post_id);
@@ -126,91 +126,53 @@ class Simple_Job_Board_Notification {
         endif;
 
         if ('applicant' != $notification_receiver) {
-            $message = '<div style="width:700px; margin:0 auto;  border: 1px solid #95B3D7;font-family:Arial;">'
-                    . '<div style="border: 1px solid #95B3D7; background-color:#95B3D7;">'
-                    . ' <h2 style="text-align:center;">Job Application </h2>'
-                    . ' </div>'
-                    . '<div  style="margin:10px;">'
-                    . '<p>' . date("Y/m/d") . '</p>'
-                    . '<p>';
+            $message .= '<div style="width:700px; margin:0 auto;  border: 1px solid #95B3D7;font-family:Arial;">';
+            $message .= '<div style="border: 1px solid #95B3D7; background-color:#95B3D7;">';
+            $message .= ' <h2 style="text-align:center;">Job Application </h2>';
+            $message .= ' </div>';
+            $message .= '<div  style="margin:10px;">';
+            $message .= '<p>';
             if (NULL != $notification_receiver)
                 $message .= 'Hi ' . $notification_receiver . ',';
 
-            $message .= '</p>'
-                    . '<p>I ';
-
-            if (NULL != $applicant_name):
-                $message.= $applicant_name . '';
-            endif;
-            $message .= ',would like to apply for the post of ' . $job_title . ' at your company ';
-            if (isset($company_name) && NULL != $company_name):
-                $message .= $company_name . '';
-            endif;
-
-            $message .= '.</p>'
-                    . '<p>I have gone through the application criterion and requirements for the particular job and have posted my resume at given address  ' . $site_url . '<br/>'
-                    . 'I have also filled the detail of the online application form on ' . date("Y/m/d") . '.'
-                    . '</p>'
-                    . '<p>I sincerely believe that my educational qualifications and extra-curricular activities will be appropriate for the job and the type of applicant it possible requires.'
-                    . 'I promiss to devote my heart and soul to the job once selected to serve your company ';
-            if (isset($company_name) && NULL != $company_name):
-                $message .= $company_name . '';
-            endif;
-            $message .= '.</p>'
-                    . 'I will be extremely grateful if you kindly glance through my application and consider me for the interview and the adjacent processes.'
-                    . '</p>'
-                    . '<p>I will be eagerly looking forward to your reply mail.</p>'
-                    . '<p>Thank you</p>'
-                    . '<p>Sincerely,</p>';
-
-            if (NULL != $applicant_name):
-                $message.= $applicant_name . '';
-            endif;
-
-            $message .= '</div>'
-                    . ' </div>';
+            $message .= '</p><p>';
+            $message .= 'a new application has been submitted. You can find it in the backend of the WP site.';
+            $message .= '</p>';
+             $message .= '</div></div>';
         }
         else {
-            $message = '<div style="width:700px; margin:0 auto;  border: 1px solid #95B3D7;font-family:Arial;">'
-                    . '<div style="border: 1px solid #95B3D7; background-color:#95B3D7;">'
-                    . ' <h2 style="text-align:center;">Job Application Acknowledgement</h2>'
-                    . ' </div>'
-                    . '<div  style="margin:10px;">'
-                    . '<p>' . date("Y/m/d") . '</p>'
-                    . '<p>';
-            $message .= 'Hi ';
+            $message = '<div style="width:700px; margin:0 auto;  border: 1px solid #95B3D7;font-family:Arial;">';
+            $message .= '<div style="border: 1px solid #95B3D7; background-color:#95B3D7;">';
+            $message .= ' <h2 style="text-align:center;">Job Application Acknowledgement</h2>';
+            $message .= ' </div>';
+            $message .= '<div  style="margin:10px;">';
+            $message .= '<p>';
+            $message .= 'Hi';
             if (NULL != $applicant_name):
-                $message .= '' . $applicant_name . ',';
-            endif;
-            $message .= '<p>Thank you for your interest ';
-
-            if (isset($company_name) && NULL != $company_name):
-                $message .= 'in' . $company_name . '.';
+                $message .= ' ' . $applicant_name . ',';
             else:
-                $message .= '.';
+                $message .= ', ';
             endif;
-            $message .= 'We acknowledge receipt of your resume and application for a position ' . $job_title . ' and sincerely appreciate your interest in our company.'
-                    . '</p>'
-                    . '<p>We will screen all applicants and select candidates whose qualifications seem to meet our needs.'
-                    . ' We will carefully consider your application during the initial screening and will contact you if you are selected to continue in the recruitment process. '
-                    . 'We wish you every success.</p>'
-                    . '<p>Regards,</p>'
-                    . '<p>Admin,</p>'
-                    . '<p>' . get_bloginfo('name') . '</p>';
-
-
-
-            $message .= '</div>'
-                    . ' </div>';
+            $message .= '</p>Thank you for getting in touch with us and your application for the position <i>' . $job_title . '</i>. We appreciate your interest in JEP Heroes.';
+            $message .= '</p>';
+            $message .= '<p>We will screen all applicants and select candidates whose qualifications seem to meet our needs.';
+            $message .= ' We will carefully consider your application during the initial screening and will contact you if you are selected to continue in the recruitment process. ';
+            $message .= 'We wish you every success.</p>';
+            $message .= '<p>Regards,</p>';
+            $message .= '<p>Team JEP Heroes</p>';
+		        $message .= '<p>jobs@jep-heroes.com</p>';
+            $message .= '<p>Like us on facebook: <a href="https://www.facebook.com/jepheroes/">www.facebook.com/jepheroes</a></p>';
+            $message .= '<p>' . get_bloginfo('name') . '</p>';
+            $message .= '</div></div>';
         }
         /**
          * Hook-> Notification Template.
-         * 
+         *
          * @since 2.2.0
-         * 
+         *
          * @param string $message{
-         *     @type string Email Tempalte 
-         * } 
+         *     @type string Email Tempalte
+         * }
          */
          return apply_filters( 'sjb_notifications_template' , $message );
     }

@@ -312,6 +312,7 @@ function wp_mail( $to, $subject, $message, $headers = '', $attachments = array()
 
 				switch ( strtolower( $name ) ) {
 					// Mainly for legacy -- process a From: header if it's there
+
 					case 'from':
 						$bracket_pos = strpos( $content, '<' );
 						if ( $bracket_pos !== false ) {
@@ -2480,4 +2481,3 @@ function wp_text_diff( $left_string, $right_string, $args = null ) {
 	return $r;
 }
 endif;
-

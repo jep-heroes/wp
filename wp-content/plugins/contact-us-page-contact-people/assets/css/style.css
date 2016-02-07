@@ -71,7 +71,7 @@
 }
 #people_contacts_container .people-entry-item .p_content_right {
   float: right;
-  width: 67%;
+  width: 67% !important;
 }
 #people_contacts_container .people-entry-item .p_content_right img {
   -moz-border-radius: 0px !important;

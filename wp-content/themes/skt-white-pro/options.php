@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 /**
  * A unique identifier is defined to store the options in the database and reference them from the theme.
  * By default it uses the theme name, in lowercase and without spaces, but this can be changed if needed.
  * If the identifier changes, it'll appear as if the options have been reset.
- */ 
+ */
 
 function optionsframework_option_name() {
 	// Change this to use your theme slug
@@ -643,7 +643,7 @@ function optionsframework_options() {
 	);
 
 	//array of all font sizes.
-	$font_sizes = array( 
+	$font_sizes = array(
 		'10px' => '10px',
 		'11px' => '11px',
 	);
@@ -660,9 +660,9 @@ function optionsframework_options() {
 			'bgimage'			=> '',
 			'class'				=> 'services',
 			'content'			=> '[services title="Web" bold="Design" icon="'.get_template_directory_uri().'/images/icon-web-design.png" link="#" button_text="Read More"]Lorem Ipsum is simply dummy text of they printing and typesetting industry. Lore Ipsum has been the industry’s standard in dummy text ever since the 1500s, when an unknown printer took a galley of type andin scrambled it to make a type book.[/services][services title="Web" bold="Development" icon="'.get_template_directory_uri().'/images/icon-web-design.png" link="#" button_text="Read More"]Lorem Ipsum is simply dummy text of they printing and typesetting industry. Lore Ipsum has been the industry’s standard in dummy text ever since the 1500s, when an unknown printer took a galley of type andin scrambled it to make a type book.[/services][services title="Mobile" bold="Website" icon="'.get_template_directory_uri().'/images/icon-responsive.png" link="#" button_text="Read More"]Lorem Ipsum is simply dummy text of they printing and typesetting industry. Lore Ipsum has been the industry’s standard in dummy text ever since the 1500s, when an unknown printer took a galley of type andin scrambled it to make a type book.[/services][services title="WordPress" bold="Themes" icon="'.get_template_directory_uri().'/images/icon-wordpress.png" link="#" button_text="Read More"]Lorem Ipsum is simply dummy text of they printing and typesetting industry. Lore Ipsum has been the industry’s standard in dummy text ever since the 1500s, when an unknown printer took a galley of type andin scrambled it to make a type book.[/services]',
-			
+
 		),
-		
+
 		2 => array(
 			'section_title'	=> '',
 			'menutitle'		=> '',
@@ -692,7 +692,7 @@ function optionsframework_options() {
 			'class'			=> 'latest-news',
 			'content'		=> '[latestposts]',
 		),
-		
+
 		5 => array(
 			'section_title'	=> 'What our clients say',
 			'menutitle'		=> 'testimonials',
@@ -700,9 +700,9 @@ function optionsframework_options() {
 			'bgimage'		=> '',
 			'class'			=> 'testimonial',
 			'content'		=> '[testimonials]',
-		
+
 		),
-		
+
 		6 => array(
 			'section_title'	=> 'Our Statistics',
 			'menutitle'		=> '',
@@ -712,9 +712,9 @@ function optionsframework_options() {
 			'content'		=> '[stat_main]
 			[stat value="2000"]Download[/stat][stat value="300"]Projects Done[/stat][stat value="400"]Happy Clients[/stat][stat value="100"]Awards Won[/stat]
 			[/stat_main]',
-			
+
 		),
-		
+
 		7 => array(
 			'section_title'	=> 'Our Team',
 			'menutitle'		=> 'team',
@@ -723,17 +723,17 @@ function optionsframework_options() {
 			'class'			=> 'our-team',
 			'content'		=> '[ourteam][column_content type="one_half"]<div class="team-desc"><h3>OUR SKILLS</h3>[skill title="Coding" percent="90" bgcolor="#00a8ff"][skill title="Design" percent="70" bgcolor="#00a8ff"][skill title="Building" percent="55" bgcolor="#00a8ff"][skill title="SEO" percent="100" bgcolor="#00a8ff"]</div>[/column_content][column_content type="one_half_last"]<div class="team-div"><h3>FEW WORDS ABOUT US</h3>[accordion]
 	[accordion_content title="WHO WE ARE"]
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet pharetra orci. Vivamus ac mi tortor. Nulla facilisi. Praesent vel odio sed dui pharetra accumsan. Morbi commodo velit et lorem volutpat, sed luctus diam efficitur. Morbi et sapien et lorem maximus finibus ut sit amet arcu. Cras ante magna, fermentum a nisi mollis, maximus malesuada lectus. 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet pharetra orci. Vivamus ac mi tortor. Nulla facilisi. Praesent vel odio sed dui pharetra accumsan. Morbi commodo velit et lorem volutpat, sed luctus diam efficitur. Morbi et sapien et lorem maximus finibus ut sit amet arcu. Cras ante magna, fermentum a nisi mollis, maximus malesuada lectus.
 	[/accordion_content]
 	[accordion_content title="WHO WE ARE"]
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet pharetra orci. Vivamus ac mi tortor. Nulla facilisi. Praesent vel odio sed dui pharetra accumsan. Morbi commodo velit et lorem volutpat, sed luctus diam efficitur. Morbi et sapien et lorem maximus finibus ut sit amet arcu. Cras ante magna, fermentum a nisi mollis, maximus malesuada lectus. 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet pharetra orci. Vivamus ac mi tortor. Nulla facilisi. Praesent vel odio sed dui pharetra accumsan. Morbi commodo velit et lorem volutpat, sed luctus diam efficitur. Morbi et sapien et lorem maximus finibus ut sit amet arcu. Cras ante magna, fermentum a nisi mollis, maximus malesuada lectus.
 	[/accordion_content]
 	[accordion_content title="WHO WE ARE"]
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet pharetra orci. Vivamus ac mi tortor. Nulla facilisi. Praesent vel odio sed dui pharetra accumsan. Morbi commodo velit et lorem volutpat, sed luctus diam efficitur. Morbi et sapien et lorem maximus finibus ut sit amet arcu. Cras ante magna, fermentum a nisi mollis, maximus malesuada lectus. 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet pharetra orci. Vivamus ac mi tortor. Nulla facilisi. Praesent vel odio sed dui pharetra accumsan. Morbi commodo velit et lorem volutpat, sed luctus diam efficitur. Morbi et sapien et lorem maximus finibus ut sit amet arcu. Cras ante magna, fermentum a nisi mollis, maximus malesuada lectus.
 	[/accordion_content]
 [/accordion]</div>[/column_content]'
 		),
-		
+
 		8 => array(
 			'section_title'	=> 'Our Projects',
 			'menutitle'		=> 'portfolio',
@@ -742,7 +742,7 @@ function optionsframework_options() {
 			'class'			=> 'our-projects',
 			'content'		=> '[photogallery filter="true"]'
 		),
-		
+
 		9 => array(
 			'section_title'	=> 'Our Clients',
 			'menutitle'		=> 'clients',
@@ -751,7 +751,7 @@ function optionsframework_options() {
 			'class'			=> '',
 			'content'		=> '[client_main][client image="'.get_template_directory_uri().'/images/compact-logo.jpg" link="#"][client image="'.get_template_directory_uri().'/images/tv-digital-logo.jpg" link="#"][client image="'.get_template_directory_uri().'/images/changes-logo.jpg" link="#"][client image="'.get_template_directory_uri().'/images/finance-logo.jpg" link="#"][client image="'.get_template_directory_uri().'/images/thousand-logo.jpg" link="#" clear="last"][client image="'.get_template_directory_uri().'/images/finance-logo.jpg" link="#"][client image="'.get_template_directory_uri().'/images/thousand-logo.jpg" link="#"][client image="'.get_template_directory_uri().'/images/changes-logo.jpg" link="#"][client image="'.get_template_directory_uri().'/images/tv-digital-logo.jpg" link="#"][client image="'.get_template_directory_uri().'/images/compact-logo.jpg" link="#" clear="last"][/client_main]'
 		),
-		
+
 		10 => array(
 			'section_title'	=> 'We’re Everywhere!',
 			'menutitle'		=> 'social',
@@ -759,8 +759,8 @@ function optionsframework_options() {
 			'bgimage'		=> '',
 			'class'			=> 'social',
 			'content'		=> '[social_area][social link="#" icon="facebook"][social link="#" icon="twitter"][social link="#" icon="google-plus"][social link="#" icon="linkedin"][social link="#" icon="pinterest"][social link="#" icon="youtube"][social link="#" icon="vine"][social link="#" icon="rss"][social link="#" icon="flickr"][social link="#" icon="tumblr"][social link="#" icon="instagram"][social link="#" icon="yahoo"][social link="#" icon="dribbble"][social link="#" icon="stumbleupon"][social link="#" icon="soundcloud"][social link="#" icon="behance"][social link="#" icon="yelp"][social link="#" icon="wordpress"][/social_area]'
-		),		
-		
+		),
+
 	);
 
 	$options = array();
@@ -792,16 +792,16 @@ function optionsframework_options() {
 		'id' => 'style2',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'name' => __('Sticky Header', 'skt-white'),
 		'desc' => __('Check this to disable sticky header on scroll', 'skt-white'),
 		'id' => 'headstick',
 		'std' => '',
 		'type' => 'checkbox');
-		
-	// font family start 
-		
+
+	// font family start
+
 	$options[] = array(
 		'name' => __('Font Faces', 'skt-white'),
 		'desc' => __('Select font for the body text', 'skt-white'),
@@ -809,65 +809,65 @@ function optionsframework_options() {
 		'type' => 'select',
 		'std' => 'Arimo',
 		'options' => $font_types );
-		
+
 	$options[] = array(
 		'desc' => __('Select font for the textual logo', 'skt-white'),
 		'id' => 'logofontface',
 		'type' => 'select',
 		'std' => 'Roboto',
 		'options' => $font_types );
-		
+
 	$options[] = array(
 		'desc' => __('Select font for the navigation text', 'skt-white'),
 		'id' => 'navfontface',
 		'type' => 'select',
 		'std' => 'Open Sans',
 		'options' => $font_types );
-		
+
 	$options[] = array(
 		'desc' => __('Select font for heading text. eg: H1, H2, H3, H4, H5, H6', 'skt-white'),
 		'id' => 'headfontface',
 		'type' => 'select',
 		'std' => 'Roboto',
 		'options' => $font_types );
-		
+
 	$options[] = array(
 		'desc' => __('Select font for slider Heading', 'skt-white'),
 		'id' => 'sldfontface',
 		'type' => 'select',
 		'std' => 'Roboto',
 		'options' => $font_types );
-		
+
 	$options[] = array(
 		'desc' => __('Select font for slider description', 'skt-white'),
 		'id' => 'slddscfontface',
 		'type' => 'select',
 		'std' => 'Roboto',
 		'options' => $font_types );
-		
+
 	$options[] = array(
 		'desc' => __('Select font for footer title', 'skt-white'),
 		'id' => 'foottitlefontface',
 		'type' => 'select',
 		'std' => 'Roboto',
 		'options' => $font_types );
-		
+
 	$options[] = array(
 		'desc' => __('Select font for footer copyright text', 'skt-white'),
 		'id' => 'copyfontface',
 		'type' => 'select',
 		'std' => 'Arimo',
 		'options' => $font_types );
-	
+
 	$options[] = array(
 		'desc' => __('Select font for footer design by text', 'skt-white'),
 		'id' => 'designfontface',
 		'type' => 'select',
 		'std' => 'Arimo',
 		'options' => $font_types );
-		
+
 	// font sizes start
-	
+
 	$options[] = array(
 		'name' => __('Font Sizes', 'skt-white'),
 		'desc' => __('Select font size for body text', 'skt-white'),
@@ -875,35 +875,35 @@ function optionsframework_options() {
 		'type' => 'select',
 		'std' => '12px',
 		'options' => $font_sizes );
-		
+
 	$options[] = array(
 		'desc' => __('Select font size for textual logo', 'skt-white'),
 		'id' => 'logofontsize',
 		'type' => 'select',
 		'std' => '28px',
 		'options' => $font_sizes );
-		
+
 	$options[] = array(
 		'desc' => __('Select font size for navigation', 'skt-white'),
 		'id' => 'navfontsize',
 		'type' => 'select',
 		'std' => '13px',
 		'options' => $font_sizes );
-		
+
 	$options[] = array(
 		'desc' => __('Select font size for slide title', 'skt-white'),
 		'id' => 'sldtitlesize',
 		'type' => 'select',
 		'std' => '58px',
 		'options' => $font_sizes );
-		
+
 	$options[] = array(
 		'desc' => __('Select font size for slide description', 'skt-white'),
 		'id' => 'slddescsize',
 		'type' => 'select',
 		'std' => '16px',
 		'options' => $font_sizes );
-		
+
 	$options[] = array(
 		'desc' => __('Select font size for section title', 'skt-white'),
 		'id' => 'sectitlesize',
@@ -919,7 +919,7 @@ function optionsframework_options() {
 		'id' => 'bodyfontcolor',
 		'std' => '#757575',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for textual logo', 'skt-white'),
 		'id' => 'logofontcolor',
@@ -938,43 +938,43 @@ function optionsframework_options() {
 		'id' => 'navhovercolor',
 		'std' => '#00a8ff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for section title', 'skt-white'),
 		'id' => 'sectitlecolor',
 		'std' => '#404040',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for slider title', 'skt-white'),
 		'id' => 'sldtitlecolor',
 		'std' => '#ffffff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for slider description', 'skt-white'),
 		'id' => 'slddsccolor',
 		'std' => '#ffffff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for widget title', 'skt-white'),
 		'id' => 'wdgttitleccolor',
 		'std' => '#2c2c2c',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for footer title', 'skt-white'),
 		'id' => 'foottitlecolor',
 		'std' => '#2c2c2c',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for footer left text (copyright)', 'skt-white'),
 		'id' => 'copycolor',
 		'std' => '#757575',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for footer right text (design by)', 'skt-white'),
 		'id' => 'designcolor',
@@ -992,189 +992,189 @@ function optionsframework_options() {
 		'id' => 'linkhovercolor',
 		'std' => '#1e1e1e',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for contact button', 'skt-white'),
 		'id' => 'cntfontcolor',
 		'std' => '#ffffff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for statistics', 'skt-white'),
 		'id' => 'statfontcolor',
 		'std' => '#757575',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select font color for footer phone/email/website', 'skt-white'),
 		'id' => 'footertextcolor',
 		'std' => '#00a8ff',
 		'type' => 'color');
-		
-	
+
+
 	// Background start
-		
+
 	$options[] = array(
 		'name' => __('Background Colors', 'skt-white'),
 		'desc' => __('Select background color for header', 'skt-white'),
 		'id' => 'headerbgcolor',
 		'std' => '#f0f0f0',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for Navigation', 'skt-white'),
 		'id' => 'navbgcolor',
 		'std' => '#e6e6e6',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for contact button', 'skt-white'),
 		'id' => 'cntbgcolor',
 		'std' => '#00a8ff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select hover background color for contact button', 'skt-white'),
 		'id' => 'cnthvbgcolor',
 		'std' => '#0d95db',
 		'type' => 'color');
-		
+
 		$options[] = array(
 		'desc' => __('Select background color for services box', 'skt-white'),
 		'id' => 'serbgcolor',
 		'std' => '#ffffff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select hover background color for services box', 'skt-white'),
 		'id' => 'serhvbgcolor',
 		'std' => '#f7f6f6',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select border color for client logo', 'skt-white'),
 		'id' => 'logobdcolor',
 		'std' => '#f4f2f2',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for social icons section', 'skt-white'),
 		'id' => 'socialseccolor',
 		'std' => '#ffffff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select color for social icons', 'skt-white'),
 		'id' => 'socialiconcolor',
 		'std' => '#ffffff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for social icons', 'skt-white'),
 		'id' => 'socialcolor',
 		'std' => '#302f2f',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select hover background color for social icons', 'skt-white'),
 		'id' => 'socialhvcolor',
 		'std' => '#00a8ff',
 		'type' => 'color');
-		
+
 
 	$options[] = array(
 		'desc' => __('Select background color for footer', 'skt-white'),
 		'id' => 'footerbgcolor',
 		'std' => '#fafafa',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for copyright section', 'skt-white'),
 		'id' => 'copybgcolor',
 		'std' => '#f4f4f4',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for gallery hover', 'skt-white'),
 		'id' => 'galhvcolor',
 		'std' => '#00a8ff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for gallery filter', 'skt-white'),
 		'id' => 'filterbgcolor',
 		'std' => '#f7f6f6',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for statistics circles', 'skt-white'),
 		'id' => 'statbgcolor',
 		'std' => '#f7f7f7',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select services box read more background color ', 'skt-white'),
 		'id' => 'srvreadmorebg',
 		'std' => '#f7f6f6',
-		'type' => 'color');	
-		
+		'type' => 'color');
+
 	$options[] = array(
 		'desc' => __('Select services box read more background color on hover ', 'skt-white'),
 		'id' => 'srvreadmorebghv',
 		'std' => '#ffffff',
-		'type' => 'color');	
-		
+		'type' => 'color');
+
 	// Border colors
 	$options[] = array(
 		'name' => __('Border Colors', 'skt-white'),
 		'desc' => __('Select border color for boxes', 'skt-white'),
 		'id' => 'bordercolor',
 		'std' => '#f5f3f3',
-		'type' => 'color');	
-		
-	$options[] = array(		
+		'type' => 'color');
+
+	$options[] = array(
 		'desc' => __('Select dark border color for boxes', 'skt-white'),
 		'id' => 'darkbordercolor',
 		'std' => '#cccccc',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select services box read more border color ', 'skt-white'),
 		'id' => 'srvreadmoreborder',
 		'std' => '#ffffff',
-		'type' => 'color');	
-		
+		'type' => 'color');
+
 	$options[] = array(
 		'desc' => __('Select our statisticscircle border color ', 'skt-white'),
 		'id' => 'statebordercolor',
 		'std' => '#ffffff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select footer recent posts li border color ', 'skt-white'),
 		'id' => 'rpliborder',
 		'std' => '#3b3b3b',
-		'type' => 'color');			
-		
+		'type' => 'color');
+
 	$options[] = array(
 		'desc' => __('Select footer recent posts image border color ', 'skt-white'),
 		'id' => 'rpimgborder',
 		'std' => '#2d2d2d',
-		'type' => 'color');	
-		
+		'type' => 'color');
+
 	$options[] = array(
 		'desc' => __('Select shortcode anchor color ', 'skt-white'),
 		'id' => 'shortcodeanchor',
 		'std' => '#757575',
-		'type' => 'color');	
-		
+		'type' => 'color');
+
 	$options[] = array(
 		'desc' => __('Select shortcode active color ', 'skt-white'),
 		'id' => 'shortcodeactive',
 		'std' => '#00a8ff',
-		'type' => 'color');					
-		
-		
+		'type' => 'color');
+
+
 	// Slider controls colors
 	$options[] = array(
 		'name' => __('Slider controls Colors', 'skt-white'),
@@ -1182,26 +1182,26 @@ function optionsframework_options() {
 		'id' => 'sldnavbg',
 		'std' => '#cccccc',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for slider pager', 'skt-white'),
 		'id' => 'sldpagebg',
 		'std' => '#cccccc',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'desc' => __('Select background color for slider pager active', 'skt-white'),
 		'id' => 'sldpagehvbg',
 		'std' => '#00a8ff',
 		'type' => 'color');
-		
+
 	$options[] = array(
 		'name' => __('Blog Single Layout', 'skt-white'),
 		'desc' => __('Select layout. eg:left sidebar, right sidebar, fullwidth, no sidebr', 'skt-white'),
 		'id' => 'singlelayout',
 		'type' => 'select',
 		'std' => 'singleright',
-		'options' => array('singleright'=>'Blog Single Right Sidebar', 'singleleft'=>'Blog Single Left Sidebar', 'sitefull'=>'Blog Single Full Width', 'nosidebar'=>'Blog Single No Sidebar') );		
+		'options' => array('singleright'=>'Blog Single Right Sidebar', 'singleleft'=>'Blog Single Left Sidebar', 'sitefull'=>'Blog Single Full Width', 'nosidebar'=>'Blog Single No Sidebar') );
 
 
 	//Layout Settings
@@ -1223,8 +1223,8 @@ function optionsframework_options() {
 		$options[] = array(
 			'desc' => __("<h3>Section ".$n."</h3>", 'skt-white'),
 			'class' => 'toggle_title',
-			'type' => 'info');	
-	
+			'type' => 'info');
+
 		$options[] = array(
 			'name' => __('Section Title', 'skt-white'),
 			'id' => 'sectiontitle'.$n,
@@ -1244,7 +1244,7 @@ function optionsframework_options() {
 			'id' => 'sectionbgcolor'.$n,
 			'std' => ( ( isset($section_text[$n]['bgcolor']) ) ? $section_text[$n]['bgcolor'] : '' ),
 			'type' => 'color');
-			
+
 		$options[] = array(
 			'name' => __('Background Image', 'skt-white'),
 			'id' => 'sectionbgimage'.$n,
@@ -1258,7 +1258,7 @@ function optionsframework_options() {
 			'id' => 'sectionclass'.$n,
 			'std' => ( ( isset($section_text[$n]['class']) ) ? $section_text[$n]['class'] : '' ),
 			'type' => 'text');
-			
+
 		$options[] = array(
 			'name'	=> __('Hide Section', 'skt-white'),
 			'desc'	=> __('Check to hide this section', 'skt-white'),
@@ -1278,7 +1278,7 @@ function optionsframework_options() {
 	$options[] = array(
 		'name' => __('Homepage Slider', 'skt-white'),
 		'type' => 'heading');
-		
+
 	$options[] = array(
 		'name' => __('Inner Page Slider', 'skt-white'),
 		'desc' => __('Show / Hide inner page slider', 'skt-white'),
@@ -1286,7 +1286,7 @@ function optionsframework_options() {
 		'type' => 'select',
 		'std' => 'hide',
 		'options' => array('show'=>'Show', 'hide'=>'Hide') );
-		
+
 	$options[] = array(
 		'name' => __('Slider Effects and Timing', 'skt-white'),
 		'desc' => __('Select slider effect.','skt-white'),
@@ -1294,19 +1294,19 @@ function optionsframework_options() {
 		'std' => 'fade',
 		'type' => 'select',
 		'options' => array('random'=>'Random', 'fade'=>'Fade', 'fold'=>'Fold', 'sliceDown'=>'Slide Down', 'sliceDownLeft'=>'Slide Down Left', 'sliceUp'=>'Slice Up', 'sliceUpLeft'=>'Slice Up Left', 'sliceUpDown'=>'Slice Up Down', 'sliceUpDownLeft'=>'Slice Up Down Left', 'slideInRight'=>'SlideIn Right', 'slideInLeft'=>'SlideIn Left', 'boxRandom'=>'Box Random', 'boxRain'=>'Box Rain', 'boxRainReverse'=>'Box Rain Reverse', 'boxRainGrow'=>'Box Rain Grow', 'boxRainGrowReverse'=>'Box Rain Grow Reverse' ));
-		
+
 	$options[] = array(
 		'desc' => __('Animation speed should be multiple of 100.', 'skt-white'),
 		'id' => 'slideanim',
 		'std' => 500,
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'desc' => __('Add slide pause time.', 'skt-white'),
 		'id' => 'slidepause',
 		'std' => 3000,
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'name' => __('Slide Controllers', 'skt-white'),
 		'desc' => __('Hide/Show Direction Naviagtion of slider.','skt-white'),
@@ -1314,21 +1314,21 @@ function optionsframework_options() {
 		'std' => 'true',
 		'type' => 'select',
 		'options' => array('true'=>'Show', 'false'=>'Hide'));
-		
+
 	$options[] = array(
 		'desc' => __('Hide/Show pager of slider.','skt-white'),
 		'id' => 'slidepage',
 		'std' => 'false',
 		'type' => 'select',
 		'options' => array('true'=>'Show', 'false'=>'Hide'));
-		
+
 	$options[] = array(
 		'desc' => __('Pause Slide on Hover.','skt-white'),
 		'id' => 'slidepausehover',
 		'std' => 'false',
 		'type' => 'select',
 		'options' => array('true'=>'Yes', 'false'=>'No'));
-		
+
 	$options[] = array(
 		'name' => __('Slider Image 1', 'skt-white'),
 		'desc' => __('First Slide', 'skt-white'),
@@ -1336,32 +1336,32 @@ function optionsframework_options() {
 		'class' => '',
 		'std' => get_template_directory_uri()."/images/slides/slider1.jpg",
 		'type' => 'upload');
-	
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle1',
 		'std' => 'SKT White',
 		'type' => 'text');
-	
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc1',
 		'std' => 'Aliquam vitae nunc nibh. Nam sollicitudin orci vel eros vulputate vestibulum.',
-		'type' => 'textarea');	
-		
+		'type' => 'textarea');
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton1',
 		'std' => '<a class="contact" href="#">Contact Us</a>',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl1',
 		'std' => '#',
-		'type' => 'text');		
-		
-	
+		'type' => 'text');
+
+
 	$options[] = array(
 		'name' => __('Slider Image 2', 'skt-white'),
 		'desc' => __('Second Slide', 'skt-white'),
@@ -1369,53 +1369,53 @@ function optionsframework_options() {
 		'id' => 'slide2',
 		'std' => get_template_directory_uri()."/images/slides/slider2.jpg",
 		'type' => 'upload');
-	
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle2',
 		'std' => 'Support 24x7',
-		'type' => 'text');	
-	
+		'type' => 'text');
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc2',
 		'std' => 'Sed rhoncus euismod risus tristique imperdiet Morbi fringilla.',
-		'type' => 'textarea');	
-		
+		'type' => 'textarea');
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton2',
 		'std' => '<a class="contact" href="#">Contact Us</a>
 <a class="contact" href="#">Call Us</a>',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl2',
 		'std' => '#',
-		'type' => 'text');	
-	
-		
+		'type' => 'text');
+
+
 	$options[] = array(
 		'name' => __('Slider Image 3', 'skt-white'),
 		'desc' => __('Third Slide', 'skt-white'),
 		'id' => 'slide3',
 		'class' => '',
 		'std' => get_template_directory_uri()."/images/slides/slider3.jpg",
-		'type' => 'upload');	
-	
+		'type' => 'upload');
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle3',
 		'std' => 'Premium Theme',
-		'type' => 'text');	
-		
+		'type' => 'text');
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc3',
 		'std' => 'Proin id sem et diam imperdiet interdum. Pellentesque sollicitudin, quam ac scelerisque dictum, urna quam posuere erat.',
-		'type' => 'textarea');	
-		
+		'type' => 'textarea');
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton3',
@@ -1423,232 +1423,232 @@ function optionsframework_options() {
 <a class="contact" href="#">Book Now</a>
 <a class="contact" href="#">Call Us</a>',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl3',
 		'std' => '#',
 		'type' => 'text');
-			
-	
+
+
 	$options[] = array(
 		'name' => __('Slider Image 4', 'skt-white'),
 		'desc' => __('Fourth Slide', 'skt-white'),
 		'id' => 'slide4',
 		'class' => '',
 		'std' => '',
-		'type' => 'upload');	
-		
+		'type' => 'upload');
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle4',
 		'std' => '',
 		'type' => 'text');
-	
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc4',
 		'std' => '',
-		'type' => 'textarea');	
-		
+		'type' => 'textarea');
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton4',
 		'std' => '<a class="contact" href="#">Call Us</a>',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl4',
 		'std' => '',
-		'type' => 'text');				
-	
+		'type' => 'text');
+
 	$options[] = array(
 		'name' => __('Slider Image 5', 'skt-white'),
 		'desc' => __('Fifth Slide', 'skt-white'),
 		'id' => 'slide5',
 		'class' => '',
 		'std' => '',
-		'type' => 'upload');	
-		
+		'type' => 'upload');
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle5',
 		'std' => '',
-		'type' => 'text');	
-	
+		'type' => 'text');
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc5',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton5',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl5',
 		'std' => '',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'name' => __('Slider Image 6', 'skt-white'),
 		'desc' => __('Sixth Slide', 'skt-white'),
 		'id' => 'slide6',
 		'class' => '',
 		'std' => '',
-		'type' => 'upload');	
-		
+		'type' => 'upload');
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle6',
 		'std' => '',
-		'type' => 'text');	
-	
+		'type' => 'text');
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc6',
 		'std' => '',
-		'type' => 'textarea');	
-		
+		'type' => 'textarea');
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton6',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl6',
 		'std' => '',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'name' => __('Slider Image 7', 'skt-white'),
 		'desc' => __('Seventh Slide', 'skt-white'),
 		'id' => 'slide7',
 		'class' => '',
 		'std' => '',
-		'type' => 'upload');	
-		
+		'type' => 'upload');
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle7',
 		'std' => '',
-		'type' => 'text');	
-	
+		'type' => 'text');
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc7',
 		'std' => '',
-		'type' => 'textarea');	
-		
+		'type' => 'textarea');
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton7',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl7',
 		'std' => '',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'name' => __('Slider Image 8', 'skt-white'),
 		'desc' => __('Eighth Slide', 'skt-white'),
 		'id' => 'slide8',
 		'class' => '',
 		'std' => '',
-		'type' => 'upload');	
-		
+		'type' => 'upload');
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle8',
 		'std' => '',
-		'type' => 'text');	
-	
+		'type' => 'text');
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc8',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton8',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl8',
 		'std' => '',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'name' => __('Slider Image 9', 'skt-white'),
 		'desc' => __('Ninth Slide', 'skt-white'),
 		'id' => 'slide9',
 		'class' => '',
 		'std' => '',
-		'type' => 'upload');	
-		
+		'type' => 'upload');
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle9',
 		'std' => '',
-		'type' => 'text');	
-	
+		'type' => 'text');
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc9',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton9',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl9',
 		'std' => '',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'name' => __('Slider Image 10', 'skt-white'),
 		'desc' => __('Tenth Slide', 'skt-white'),
 		'id' => 'slide10',
 		'class' => '',
 		'std' => '',
-		'type' => 'upload');	
-		
+		'type' => 'upload');
+
 	$options[] = array(
 		'desc' => __('Title', 'skt-white'),
 		'id' => 'slidetitle10',
 		'std' => '',
-		'type' => 'text');	
-	
+		'type' => 'text');
+
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-white'),
 		'id' => 'slidedesc10',
 		'std' => '',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'desc' => __('Slider Buttons', 'skt-white'),
 		'id' => 'slidebutton10',
 		'std' => '',
 		'type' => 'textarea');
-	
+
 	$options[] = array(
 		'desc' => __('Slide Url', 'skt-white'),
 		'id' => 'slideurl10',
@@ -1660,7 +1660,7 @@ function optionsframework_options() {
 	$options[] = array(
 		'name' => __('Footer', 'skt-white'),
 		'type' => 'heading');
-		
+
 	$options[] = array(
 		'name' => __('Footer About Section', 'skt-white'),
 		'desc' => __('About text title.', 'skt-white'),
@@ -1673,52 +1673,52 @@ function optionsframework_options() {
 		'id' => 'footerabttext',
 		'std' => 'Donec ut ex ac nulla pellentesque mollis in a enim. Praesent placerat sapien mauris, vitae sodales tellus venenatis ac. Suspendisse suscipit velit id ultricies auctor. Duis turpis arcu, aliquet sed sollicitudin sed, porta quis urna. Quisque velit nibh, egestas et erat a, vehicula interdum augue. Morbi ut elementum justo. Sed eu nibh orci. Vivamus elementum erat orci. Curabitur consequat convallis dapibus.',
 		'type' => 'textarea');
-		
+
 	$options[] = array(
 		'name' => __('Footer Recent Posts', 'skt-white'),
 		'desc' => __('Footer recent post title.', 'skt-white'),
 		'id' => 'recenttitle',
 		'std' => 'Recent Posts',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'name' => __('Footer Address Title', 'skt-white'),
 		'desc' => __('Footer Address title.', 'skt-white'),
 		'id' => 'addresstitle',
 		'std' => 'SKT White',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'desc' => __('Add company address here.', 'skt-white'),
 		'id' => 'address',
 		'std' => 'Street 238,52 tempor Donec ultricies mattis nulla, suscipit risus tristique ut.',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'desc' => __('Add phone number here.', 'skt-white'),
 		'id' => 'phone',
 		'std' => '+1 500 000 0000',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'desc' => __('Add email address here.', 'skt-white'),
 		'id' => 'email',
 		'std' => 'demo@lorem.com',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'desc' => __('Add company url here with http://.', 'skt-white'),
 		'id' => 'weblink',
 		'std' => 'http://demo.com',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'name' => __('Footer Copyright', 'skt-white'),
 		'desc' => __('Copyright Text for your site.', 'skt-white'),
 		'id' => 'copytext',
 		'std' => '&copy; 2015 SKT White. All Rights Reserved',
 		'type' => 'text');
-		
+
 	$options[] = array(
 		'desc' => __('Footer Text Link', 'skt-white'),
 		'id' => 'ftlink',
@@ -1738,45 +1738,45 @@ function optionsframework_options() {
 [/services]
 </pre>', 'skt-white'),
 		'type' => 'info');
-		
-		
+
+
 	$options[] = array(
 		'name' => __('Latest posts', 'skt-white'),
 		'desc' => __('<pre>
 [latestposts show="2"]
 </pre>', 'skt-white'),
 		'type' => 'info');
-		
-		
+
+
 	$options[] = array(
 		'name' => __('Testimonial', 'skt-white'),
 		'desc' => __('<pre>
 [testimonials]
 </pre>', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Statistics', 'skt-white'),
 		'desc' => __('[stat_main]
 					[stat value="100"]Clients[/stat]
 			[/stat_main]', 'skt-white'),
 		'type' => 'info');
-	
+
 	$options[] = array(
 		'name' => __('Skills', 'skt-white'),
 		'desc' => __('[skill title="Coding" percent="90" bgcolor="#00a8ff"]', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Team', 'skt-white'),
 		'desc' => __('[ourteam]', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Gallery', 'skt-white'),
 		'desc' => __('[photogallery filter="true"]', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Social Icons', 'skt-white'),
 		'desc' => __('<pre>
@@ -1784,12 +1784,12 @@ function optionsframework_options() {
 	[social link="Link here" icon="Font Awesome Icon Name exa.facebook"]
 [/social_area]
 </pre>', 'skt-white'),
-		'type' => 'info');		
+		'type' => 'info');
 
 	$options[] = array(
 		'name' => __('Animation Name list', 'skt-white'),
 		'desc' => __('bounce, flash, pulse, shake, swing, tada, wobble, bounceIn, bounceInDown, bounceInLeft, bounceInRight, bounceInUp, bounceOut, bounceOutDown, bounceOutLeft, bounceOutRight, bounceOutUp, fadeIn, fadeInDown, fadeInDownBig, fadeInLeft, fadeInLeftBig, fadeInRight, fadeInRightBig, fadeInUp, fadeInUpBig, fadeOut, fadeOutDown, fadeOutDownBig, fadeOutLeft, fadeOutLeftBig, fadeOutRight, fadeOutRightBig, fadeOutUp, fadeOutUpBig, flip, flipInX, flipInY, flipOutX, flipOutY, lightSpeedIn, lightSpeedOut, rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight, rotateOut, rotateOutDownLeft, rotateOutDownRight, rotateOutUpLeft, rotateOutUpRight, slideInDown, slideInLeft, slideInRight, slideOutLeft, slideOutRight, slideOutUp, rollIn, rollOut, zoomIn, zoomInDown, zoomInLeft, zoomInRight, zoomInUp', 'skt-white'),
-		'type' => 'info');	
+		'type' => 'info');
 
 	$options[] = array(
 		'name' => __('2 Column Content', 'skt-white'),
@@ -1802,7 +1802,7 @@ function optionsframework_options() {
 	Column 2 Content goes here...
 [/column_content]
 </pre>', 'skt-white'),
-		'type' => 'info');	
+		'type' => 'info');
 
 	$options[] = array(
 		'name' => __('3 Column Content', 'skt-white'),
@@ -1819,7 +1819,7 @@ function optionsframework_options() {
 	Column 3 Content goes here...
 [/column_content]
 </pre>', 'skt-white'),
-		'type' => 'info');	
+		'type' => 'info');
 
 	$options[] = array(
 		'name' => __('4 Column Content', 'skt-white'),
@@ -1840,7 +1840,7 @@ function optionsframework_options() {
 	Column 4 Content goes here...
 [/column_content]
 </pre>', 'skt-white'),
-		'type' => 'info');	
+		'type' => 'info');
 
 	$options[] = array(
 		'name' => __('5 Column Content', 'skt-white'),
@@ -1865,14 +1865,14 @@ function optionsframework_options() {
 	Column 5 Content goes here...
 [/column_content]
 </pre>', 'skt-white'),
-		'type' => 'info');	
+		'type' => 'info');
 
 	$options[] = array(
 		'name' => __('Clear', 'skt-white'),
 		'desc' => __('<pre>
 [clear]
 </pre>', 'skt-white'),
-		'type' => 'info');	
+		'type' => 'info');
 
 	$options[] = array(
 		'name' => __('HR / Horizontal separation line', 'skt-white'),
@@ -1886,7 +1886,7 @@ function optionsframework_options() {
 		'desc' => __('<pre>
 [separator height="20"]
 </pre>', 'skt-white'),
-		'type' => 'info');	
+		'type' => 'info');
 
 	$options[] = array(
 		'name' => __('Tabs', 'skt-white'),
@@ -1959,7 +1959,7 @@ function optionsframework_options() {
 [gradient_button size="large" bg_color="#026" color="#fff" text="Large Gradient Button" title="Large Gradient Button" url="" position="left"]
 </pre>', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Gradient Button - Xtra Large', 'skt-white'),
 		'desc' => __('<pre>
@@ -2015,28 +2015,28 @@ function optionsframework_options() {
 [message type="success"]This is a sample of the \'success\' style message box shortcode. To use this style use the following shortcode[/message]
 </pre>', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Message Box - Error', 'skt-white'),
 		'desc' => __('<pre>
 [message type="error"]This is a sample of the \'error\' style message box shortcode. To use this style use the following shortcode.[/message]
 </pre>', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Message Box - Warning', 'skt-white'),
 		'desc' => __('<pre>
 [message type="warning"]This is a sample of the \'warning\' style message box shortcode. To use this style use the following shortcode.[/message]
 </pre>', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Message Box - Info', 'skt-white'),
 		'desc' => __('<pre>
 [message type="info"]This is a sample of the \'info\' style message box shortcode. To use this style use the following shortcode.[/message]
 </pre>', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Message Box - About', 'skt-white'),
 		'desc' => __('<pre>
@@ -2055,27 +2055,27 @@ function optionsframework_options() {
 </pre>
 ', 'skt-white'),
 		'type' => 'info');
-		
-			
+
+
 	$options[] = array(
 		'name' => __('Horizontal Separator', 'skt-white'),
-		'desc' => __('[hr_top] 
+		'desc' => __('[hr_top]
 ', 'skt-white'),
 		'type' => 'info');
-		
-		
+
+
 	$options[] = array(
 		'name' => __('Search Form', 'skt-white'),
-		'desc' => __('[searchform] 
+		'desc' => __('[searchform]
 ', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Contact Form', 'skt-white'),
-		'desc' => __('[contactform to_email="sales@jep-heroes.com" title="Contact Form"] 
+		'desc' => __('[contactform to_email="sales@jep-heroes.com" title="Contact Form"]
 ', 'skt-white'),
 		'type' => 'info');
-		
+
 	$options[] = array(
 		'name' => __('Pricing', 'skt-white'),
 		'desc' => __('<pre>
@@ -2118,18 +2118,18 @@ function optionsframework_options() {
 ', 'skt-white'),
 		'type' => 'info');
 
-	// Support					
+	// Support
 	$options[] = array(
 		'name' => __('Our Themes', 'skt-white'),
 		'type' => 'heading');
 
 	$options[] = array(
 		'desc' => __('SKT White WordPress theme has been Designed and Created by SKT Themes.', 'skt-white'),
-		'type' => 'info');	
+		'type' => 'info');
 
 	 $options[] = array(
 		'desc' => __('<a href="'.esc_url('http://sktthemes.net/').'" target="_blank"><img src="'.get_template_directory_uri().'/images/sktskill.jpg"></a>', 'skt-white'),
-		'type' => 'info');	
+		'type' => 'info');
 
 	return $options;
 }

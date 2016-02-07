@@ -461,23 +461,11 @@ class People_Contact {
 		</script>
 		<?php
 		$html = '';
-		if( $show_map != 0 ){
-			$html .= '<div style="clear:both"></div>';
-			$html .= '<div class="people-entry">';
-			$html .= '<div style="clear:both"></div>';
-
-			$html .= '<div id="map_canvas'.$unique_id.'" class="map_canvas_container" style="width: '.$map_width.$map_width_type.'; height: '.$map_height.'px;float:left;"></div>';
-			$html .= '<div style="clear:both;margin-bottom:0em;" class="custom_title"></div>';
-			$html .= '<div style="clear:both;height:15px;"></div>';
-			$html .= '</div>';
-		}
-
 		$grid_view_team_title = trim($people_contact_global_settings['grid_view_team_title']);
 
 		if ( $grid_view_team_title != '' ) {
 			$html .= '<div class="custom_box_title"><h1 class="p_title">'.$grid_view_team_title.'</h1></div>';
 		}
-		$html .= '<div style="clear:both;margin-bottom:1em;"></div>';
 		$html .= '<div class="people_box_content people_box_content'.$unique_id.' pcol'.$grid_view_col.'"><div class="people-grid-sizer"></div>';
 		if(is_array($contacts) && count($contacts) > 0 ){
 			foreach($contacts as $key=>$value){
@@ -498,10 +486,10 @@ class People_Contact {
 				if ( function_exists( 'wp_make_content_images_responsive' ) ) {
 					$img_output = wp_make_content_images_responsive( $img_output );
 				}
-				$html .= '<h3 class="p_item_title">'.esc_attr( stripslashes( $value['c_title'])).'</h3>';
+				if($value['c_title']) $html .= '<h3 class="p_item_title">'.esc_attr( stripslashes( $value['c_title'])).'</h3>';
 				$html .= '<div class="p_content_left">'.$img_output.'</div>';
 				$html .= '<div class="p_content_right">';
-				$html .= '<h3 class="p_item_name">'.esc_attr( stripslashes( $value['c_name'])).'</h3>';
+				if($value['c_name']) $html .= '<h3 class="p_item_name">'.esc_attr( stripslashes( $value['c_name'])).'</h3>';
 				if ( trim($value['c_about']) != '') {
 				$html .= wpautop(wptexturize( stripslashes( $value['c_about'] ) ) );
 				}
@@ -531,6 +519,17 @@ class People_Contact {
 			}
 		}
 		$html .= '</div>';
+
+		if( $show_map != 0 ){
+			$html .= '<div style="clear:both"></div>';
+			$html .= '<div class="people-entry">';
+			$html .= '<div style="clear:both"></div>';
+
+			$html .= '<div id="map_canvas'.$unique_id.'" class="map_canvas_container" style="width: '.$map_width.$map_width_type.'; height: '.$map_height.'px;float:left;"></div>';
+			$html .= '<div style="clear:both;margin-bottom:0em;" class="custom_title"></div>';
+			$html .= '<div style="clear:both;height:15px;"></div>';
+			$html .= '</div>';
+		}
 		$html .= '<div style="clear:both"></div>';
 		return $html;
 	}

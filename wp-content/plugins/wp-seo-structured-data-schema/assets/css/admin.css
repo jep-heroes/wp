@@ -1,0 +1,111 @@
+.wseo_loading{
+    background: url('../images/loading.gif') no-repeat center center;
+    padding: 11px;
+}
+.field-container {
+    display: inline-block;
+    width: 100%;
+}
+.field-container label {
+    float: left;
+    width: 25%;
+}
+.field-container .field-content {
+    width: 75%;
+    float: right;
+}
+div#tabs-kcseo-container .field-container input{
+    width: 300px;
+}
+div#tabs-kcseo-container .field-container textarea{
+    width: 100%;
+    min-height: 80px;
+}
+div#tabs-kcseo-container .field-container input[type=number]{
+    width: 100px;
+}
+div#tabs-kcseo-container .field-container input.kcseo-date{
+    width: auto;
+}
+li.ui-tabs-active a:focus{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#tabs-container {
+    margin-top: 20px;
+}
+.form-table th {
+    padding: 5px 10px 5px 0;
+}
+.form-table tr.person, .form-table tr.field_homepage{
+    display: none;
+}
+.sfield span.select2 {
+    margin-right: 10px;
+}
+.sfield {
+    margin-bottom: 10px;
+}
+.sfield input {
+    min-width: 350px;
+}
+span.dashicons.dashicons-trash.social-remove {
+    color: red;
+    margin: 0 5px;
+    cursor: pointer;
+}
+div#response {
+    padding: 10px;
+    font-size: 15px;
+}
+select#area_served {
+    min-width: 300px;
+}
+
+.form-table td {
+    padding: 5px 10px;
+    vert-align: top !important;
+}
+p.description.kco-telephone > span {
+    display: block;
+    color: red;
+}
+.field-container .field-label span {
+    margin-left: 10px;
+    color: red;
+}
+p.description .required {
+    color: red;
+}
+.schema-holder .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+    padding: .5em 0.6em;
+    font-size: 14px;
+}
+
+.side-tip span, .schema-tips span {
+    font-weight: bold;
+}
+.side-tip a, .schema-tips p a {
+    display: block;
+}
+.schema-tips {
+    margin-bottom: 20px;
+}
+.with-tooltip {
+    position: relative;
+    max-width: 460px;
+}
+.schema-tooltip-holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.schema-tooltip-holder .hidden{
+    display: none;
+}
+.schema-tooltip{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url("../images/help.png") no-repeat center;
+}
